@@ -1,7 +1,7 @@
 {
-  "name": "react-sortable-tree",
+  "name": "react-sortable-tree-fork",
   "version": "2.8.0",
-  "description": "Drag-and-drop sortable component for nested data and hierarchies",
+  "description": "Drag-and-drop sortable component for nested data and hierarchies; forked from frontend-collective/react-sortable-tree",
   "scripts": {
     "prebuild": "yarn run lint && yarn run clean",
     "build": "rollup -c",
@@ -65,22 +65,26 @@
     "> 1%"
   ],
   "dependencies": {
-    "frontend-collective-react-dnd-scrollzone": "^1.0.2",
+    "hoist-non-react-statics": "^3.3.2",
     "lodash.isequal": "^4.5.0",
+    "lodash.throttle": "^4.1.1",
     "prop-types": "^15.6.1",
+    "raf": "^3.4.1",
+    "react-display-name": "^0.2.5",
     "react-dnd": "^11.1.3",
     "react-dnd-html5-backend": "^11.1.3",
     "react-lifecycles-compat": "^3.0.4",
     "react-virtualized": "^9.21.2"
   },
   "peerDependencies": {
-    "react": "^16.3.0",
-    "react-dnd": "^7.3.0",
-    "react-dom": "^16.3.0"
+    "react": "^17.0.1",
+    "react-dnd": "^11.1.3",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-transform-modules-commonjs": "^7.1.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
